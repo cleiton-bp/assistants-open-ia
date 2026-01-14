@@ -158,7 +158,7 @@ Envia uma nova mensagem para a Thread.
 **Documentação:**  
 https://platform.openai.com/docs/api-reference/messages/createMessage
 
-#### GET /api/threads/{threadId}/messages}
+#### GET /api/threads/{threadId}/messages
 Lista todas as mensagens de uma Thread.  
 
 **Documentação:**  
@@ -166,16 +166,44 @@ https://platform.openai.com/docs/api-reference/messages/listMessages
 
 ---
 
-## Fluxo Básico de Uso
+## RunsController
 
-1. Criar um Assistant com as instruções desejadas
-2. Criar uma Thread para iniciar uma conversa
-3. Enviar mensagens para a Thread
-4. Processar as mensagens utilizando o Assistant
+Os Runs representam execuções do modelo em uma Thread. Cada Run corresponde a uma tentativa de processar uma resposta do Assistant para a Thread.
 
-Esse fluxo segue o padrão definido pela OpenAI para conversas persistentes.
+**Documentação oficial:**  
+https://platform.openai.com/docs/api-reference/runs
+
+### Endpoints
+
+#### POST /api/threads/{threadId}/runs
+Cria um novo Run em uma Thread, processando a próxima resposta do Assistant.  
+
+**Documentação:**  
+https://platform.openai.com/docs/api-reference/runs/createRun
+
+#### GET /api/threads/{threadId}/runs/{runId}
+Obtém informações de um Run específico dentro de uma Thread, incluindo status, erro ou resultado.  
+
+**Documentação:**  
+https://platform.openai.com/docs/api-reference/runs/getRun
 
 ---
+
+## Schemas
+
+- `CreateAssistantDto`  
+- `CreateMessageDto`  
+- `CreateRunDto`  
+- `UpdateAssistantDto`
+
+---
+
+## Fluxo Básico de Uso
+
+1. Criar um Assistant com as instruções desejadas  
+2. Criar uma Thread para iniciar uma conversa  
+3. Enviar mensagens para a Thread  
+4. Criar Runs para processar respostas do Assistant
 
 ## Observações Importantes
 
