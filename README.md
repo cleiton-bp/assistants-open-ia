@@ -8,13 +8,10 @@ O objetivo é oferecer uma base fácil de manter e de evoluir para interfaces gr
 
 ## Visão Geral
 
-A Assistants API é organizada em três conceitos principais:
-
 * **Assistant**: define o comportamento e as instruções do modelo
 * **Thread**: representa uma sessão de conversa
 * **Message**: representa cada mensagem enviada ou recebida dentro de uma conversa
-
-Esses elementos trabalham juntos para permitir conversas persistentes e contextualizadas.
+* **Run**: representa uma execução do modelo em uma Thread, processando respostas do Assistant
 
 ---
 
