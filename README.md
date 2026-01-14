@@ -204,30 +204,4 @@ https://platform.openai.com/docs/api-reference/runs/getRun
 3. Enviar mensagens para a Thread  
 4. Criar Runs para processar respostas do Assistant
 
-## Observações Importantes
-
-* A Assistants API está em beta e pode sofrer alterações
-* O header `OpenAI-Beta: assistants=v2` é obrigatório
-* A API Key deve ser armazenada de forma segura
-
 ---
-
-## Links Úteis
-
-* Assistants Overview
-  [https://platform.openai.com/docs/assistants](https://platform.openai.com/docs/assistants)
-
-* API Reference
-  [https://platform.openai.com/docs/api-reference](https://platform.openai.com/docs/api-reference)
-
-* OpenAI Platform
-  [https://platform.openai.com](https://platform.openai.com)
-
----
-
-## Evoluções Futuras (Opcional)
-
-* Execução de Assistants (Runs)
-* Respostas em tempo real (streaming)
-* Integração com front-end
-* Controle de usuários e permissões
