@@ -73,6 +73,17 @@ Documentação oficial:
 
 ---
 
+## Run
+
+O Run representa uma execução do modelo dentro de uma Thread.  
+Cada Run processa uma resposta do Assistant com base nas mensagens já existentes na Thread.  
+Ele permite acompanhar o **status da execução**, **erros** ou o **resultado final** da geração da resposta.
+
+Documentação oficial:  
+[https://platform.openai.com/docs/api-reference/runs](https://platform.openai.com/docs/api-reference/runs)
+
+---
+
 ## Controllers
 
 ## AssistantsController
