@@ -189,15 +189,6 @@ https://platform.openai.com/docs/api-reference/runs/getRun
 
 ---
 
-## Schemas
-
-- `CreateAssistantDto`  
-- `CreateMessageDto`  
-- `CreateRunDto`  
-- `UpdateAssistantDto`
-
----
-
 ## Fluxo Básico de Uso
 
 1. Criar um Assistant com as instruções desejadas  
